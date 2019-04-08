@@ -2,6 +2,7 @@
 
 USING_NS_CC;
 
+
 bool BaseLayer::init()
 {
 	if (!Layer::init()) {
@@ -17,7 +18,7 @@ bool BaseLayer::init()
 
 	//ÑÛ¾¦¾«Áé
 	auto glassesSprite = Sprite::createWithSpriteFrameName("setting.glasses.png");
-	glassesSprite->setPosition(Vec2(visibleSize.width - glassesSprite->getContentSize().width / 2, 160));
+	glassesSprite->setPosition(Vec2(visibleSize.width - glassesSprite->getContentSize().width / 2, 200));
 	addChild(glassesSprite);
 
 	//ÊÖÌ×¾«Áé
@@ -31,6 +32,7 @@ bool BaseLayer::init()
 
 	auto okMenuItem = MenuItemSprite::create(okNormal, okSelected, CC_CALLBACK_1(BaseLayer::menuBackCallback, this));
 	auto mu = Menu::create(okMenuItem, NULL);
+	mu->setPosition(Vec2(visibleSize.width - mu->getContentSize().width / 2 + 60, 60));
 	addChild(mu);
 
 

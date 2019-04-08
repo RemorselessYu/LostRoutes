@@ -46,7 +46,7 @@ bool HomeMenuLayer::init()
 		settingSpriteSelected,
 		CC_CALLBACK_1(HomeMenuLayer::menuItemCallback, this)
 	);
-	settingMenuItem->setTag(ActionType::MenuItemStart);
+	settingMenuItem->setTag(ActionType::MenuItemSetting);
 
 	//°ïÖú²Ëµ¥
 	auto helpSpriteNormal = Sprite::createWithSpriteFrameName("home.button.help.png");

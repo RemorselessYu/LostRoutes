@@ -12,7 +12,7 @@ cocos2d::Scene * HelpLayer::createScene()
 
 bool HelpLayer::init()
 {
-	if (!Layer::create())
+	if (!BaseLayer::create())
 		return false;
 
 
